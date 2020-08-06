@@ -1,0 +1,94 @@
+extends ../../layouts/_layout__pages
+
+block title
+  title About
+
+block content
+  .p-about
+    h2.l-main--content--title Tomonari#[br]Dotera
+    img.p-about--profile(src='images/tomonari.jpg')
+    a(href='index.html').c-toggleBtn Japanese
+    #js-en
+      section.p-section
+        h3.p-section--title Birth Place
+        p Ueno (Downtown) Tokyo, 1959
+      section.p-section
+        h3.p-section--title Education
+        p 1984 BAS. Dept. of Pure & Applied Sciences, University of Tokyo
+        p 1989 Ph.D. Dept. of Pure & Applied Sciences, University of Tokyo
+      section.p-section
+        h3.p-section--title Employee
+        p 1989-1994 Research Associate (Dept. of Pure & Applied Sciences, University of Tokyo)
+        p 1990-1992 Post doctor (Dept. of Physics, University of Pennsylvania)
+        p 1994- Associate Professor (Saitama Study Center, The Open University of Japan (The University of the Air))
+        p 2003- Associate Professor (Dept. of Polymer Chemistry, Kyoto University)
+        p 2009- Professor (Dept. of Physics, Kindai University)
+      section.p-section
+        h3.p-section--title Major
+        p Soft and Complex Condensed Matter Physics
+      section.p-section
+        h3.p-section--title Research Area
+        p Complex Morphology of Multicomponent Block Copolymers
+        p Soft Quasicrystals, Materials Geometry
+      section.p-section
+        h3.p-section--title Activity & Topics
+        a(href="http://sciencechannel.jst.go.jp/Q140001/detail/Q140001010.html")
+          img(src='images/science-news.png')
+        p: a(href='../activity').c-linktext See also activity-page.
+        p: a(href='https://physics.aps.org/story/v19/st15').c-linktext 14 May 2007 Physical Review Focus
+        p: a(href='https://cen.acs.org/articles/85/i21/Polymeric-Quasicrystals.html').c-linktext 21 May 2007 Chemical Engineering News
+        p: a(href='http://www.spring8.or.jp/en/news_publications/publications/scientific_results/soft_matter/topic10').c-linktext 21 March 2010 Spring-8
+        p 4 Oct. 2011 Cited in the announcement (No. 38) for the Nobel Prize Chemistry 2011
+        p: a(href='http://sciencechannel.jst.go.jp/Q140001/detail/Q140001010.html').c-linktext 5 March. 2015 Science News, "Quasicrystals: The third type of solid"
+        p 2014 The origin of quasicrystal formation was elucidated in a letter appeared in Nature.
+        p: a(href='http://iopscience.iop.org/journal/0953-8984/page/soft-quasicrystals').c-linktext 2017 J. Phys.: Condens. Matter, Special issue: Soft quasicrystals Guest Editors: P. Ziherl and T. Dotera
+        p 2017 A bronze-mean tiling was discovered in a letter of Nature Materials.
+        p 2019 Aperiodic approsimants were proposed in a paper of Nature Communications.
+        p: a(href='https://devicematerialscommunity.nature.com/users/297762-tomonari-dotera/posts/53215-metallic-mean-quasicrystals-as-aperiodic-approximants-of-periodic-crystal?fbclid=IwAR3GVdvZ_GUkZaryrM5oxBITHGxfD8WL9f2kafR_KG6Wck9Vwaew8Gdomcg').c-linktext 2019 A blog was posted in Nature research "Behind the Paper."
+        p: a(href='https://www.instagram.com/p/B3hA9E3BtRW/').c-linktext Nature Instagram.
+      section.p-section
+        h3.p-section--title Society
+        <a class="c-linktext" href="http://www.jps.or.jp/books/gakkaishi/2006/08/618.html"><img src="images/japan-physics-journal.jpg" alt=""></a>
+        p The Physical Society of Japan (JPS) member
+        p American Physical Society (APS) member (+DPOLY, GSOFT)
+        <p>The Society of Polymer Science Japan (SPSJ) member</p>
+        <p>American Chemical Society (ACS) member</p>
+        <p>Materials Research Society (MRS) member</p><p>Research Group on Computational Polymer Science (RGCPS) member, Steering committee (-2009)</p>
+        <p>YITP Workshop "Soft Matter as Structured Materials" 2005 Organizers</p>
+        <p>Study Group on Labylinth (2009-)</p>
+        <p>International Advisory Board, AIWQ5 (2009), AIWQ6 (2011)</p>
+        <p>Program Committee, ICQ11 (2010), ICQ12 (2013)</p>
+        <p>Chair, International Union of Crystallography (IUCr) MS-57 (2014)</p>
+        <p>Advisor, JST, PRESTO "Hyper-nano-space design toward innovative functionality" (2013-2018)</p>
+        <p>Chair, Division 6, The Physical Society of Japan (2019)</p>
+      section.p-section
+        h3.p-section--title Award
+        <img src="images/prize.jpg" alt="">
+        <p>Journal of Polymer Science Part B: Polymer Physics Prize for 2007</p>
+      section.p-section
+        h3.p-section--title Teaching
+        <p>Courses (2004): Thermal Statistical Physics (senior), Fourier Analysis (sophomor)</p>
+        <p>Courses (2005): Chemical Mathematics (junior), Physics of complex liquids (graduate)</p>
+        <p>Courses (2006-2008): Differential and Integral calculaus in Natural Phenomena (freshman)</p>
+        <p>University of the Air (Japanese Open University) courses on Sky PerfecTV : Heat &amp; Temperature, Motion &amp; Force, Energy &amp; Heat, and Computational Science</p>
+        <p>(2004) Nagoya University,<br> (2008) Tokyo Institute of Technology,<br> (2011) Chuo University</p>
+      section.p-section
+        h3.p-section--title Selected Papers
+        p: a.c-linktext(href='../publications/abstracts/phason.html') [1] T. Dotera and P. J. Steinhardt, "Ising-Like Transition and Phason Unlocking in Icosahedral Quasicrystals," Physical Review Letters, <b>72</b> (1994) 1670-1673
+        p: a.c-linktext(href='../publications/abstracts/kelvin.html') [2] T. Dotera, "Cell Crystals: Kelvin's Polyhedra in Block Copolymer Melts," Physical Review Letters, <b>82</b> (1999) 105-108
+        p
+          a.c-linktext(href="../publications/abstracts/abcTri_blend.html") [3] T. Dotera, "Tricontinuous Cubic Structures in ABC/A/C Copolymer and Homopolymer Blends," Physical Review Letters, <b>89</b> (2002) 205502
+          |#[br] Fig. 1 was chosen for Nov. 11 (2002) cover illustration.
+        p: img(src="images/prl.jpeg", alt="prl")
+        p: a.c-linktext(href='../publications/abstracts/abcStar.html') [4] Tohru Gemma, Akira Hatano and Tomonari Dotera, "Monte Carlo Simulations of the Morphology of ABC Starpolymers using the Diagonal Bond Method," Macromolecules <b>35</b> (2002) 3225-3237
+        p: a.c-linktext(href='../publications/abstracts/33434.html') [5] A. Takano, W. Kawashima, A. Noro, Y. Isono, N. Tanaka, T. Dotera and Y. Matsushita,  "A Mesoscopic Archimedean Tiling Having a New Complexity in an ABC Star Polymer'' J. Polym. Sci. Part B: Polym. Phys. <b>43</b>, (2005) 2427-2432
+        <img src="images/polymer.jpg" alt="">
+        p Journal of Polymer Science Part B: Polymer Physics Prize for 2007
+        p
+          a.c-linktext(href='../publications/abstracts/mesoQc.html') [6] K. Hayashida, T. Dotera, A. Takano, and Y. Matsushita, "Polymeric quasicrystal: Mesoscopic quasicrystalline tiling in ABC star polymers" Phys. Rev. Lett. <b>98</b>, (2007) 195502
+          a(href='https://physics.aps.org/story/v19/st15').c-linktext 14 May 2007 Physical Review Focus
+        p: a.c-linktext(href='../publications/abstracts/ijch.html') [7] T.Dotera, "Quasicrystals in Soft Matter" Israel Journal of Chemistry, <b>51</b>, (2011) 1197-1205
+        <img src="images/lJCPic.jpg" alt="">
+        p: a.c-linktext(href='../publications/abstracts/nature2014.html') [8] T. Dotera, T. Oshiro &amp; P. Ziherl "Mosaic two-lengthscale quasicrystals" nature, <b>506</b>, (2014) 208–211
+        p: a.c-linktext(href='../publications/abstracts/nature_materials2017.html') [9] T. Dotera, S. Bekku &amp; P. Ziherl "Bronze-mean hexagonal quasicrystal" nature materials, <b>16</b>, (2017) 987–992
+        p: a.c-linktext(href='../publications/abstracts/nature_communications2019.html') [10] J. Nakakura, P. Ziherl, J. Matsuzawa &amp; T. Dotera "Metallic-mean quasicrystals as aperiodicapproximants of periodic crystals" nature communications, <b>10</b>, (2019) 4235

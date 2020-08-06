@@ -1,0 +1,50 @@
+extends ../../layouts/_layout__pages
+
+block title
+  title Students
+
+block content
+  h2.l-main--content--title Students
+  h3.l-main--content--subtitle 研究室メンバー
+  .p-student
+    section: ul
+      include ../../data/_students
+      each val, i in items
+        li.p-student--item
+          img(src=`images/${val.image}`)
+          .p-student--item--name 
+            h3.u-mB5=val.name
+            p (#{val.grade})
+          .p-student--item--text
+            if val.longtext
+              .moreBox
+                input(type='checkbox' id=`barS${i}`).moreBox--trigger
+                label.moreBox--btn(for=`barS${i}`)
+                ul.moreBox--item
+                  each text in val.longtext
+                    li.u-mB10=text
+            else if val.text
+              | #{val.text}
+            else
+              | 勉強中
+
+    section
+      h3.p-student--head 卒業生
+      ul
+        include ../../data/_graduates
+        each val, i in items
+          li.p-student--item.p-student--item__graduate
+            img(src=`images/${val.image}`)
+            .p-student--item--name 
+              h3.u-mB5=val.name
+              p #{val.year}年#{val.month}月
+            .p-student--item--text
+              if val.longtext
+                .moreBox
+                  input(type='checkbox' id=`bar${i}`).moreBox--trigger
+                  label.moreBox--btn(for=`bar${i}`)
+                  ul.moreBox--item
+                    each text in val.longtext
+                      li.u-mB10=text
+              else
+                | #{val.text}

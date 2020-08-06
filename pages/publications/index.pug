@@ -1,0 +1,23 @@
+extends ../../layouts/_layout__pages
+
+block title
+  title Publications
+
+block content
+  h2.l-main--content--title Publications
+  section: ul.p-publication
+    include ../../data/_publications
+    each val in items
+      li.p-publication--item
+        h3.p-publication--item--title=val.title
+        p.p-publication--item--author=val.author
+        p.p-publication--item--paper 
+          if val.paper
+            | #{val.paper.title}. 
+            b #{val.paper.volume}, 
+            | #{val.paper.page}.
+        p.p-publication--item--text=val.text
+        .p-publication--item--links
+          if val.links
+            each link in val.links
+              a.c-smallBtn(href=link.link)=link.text

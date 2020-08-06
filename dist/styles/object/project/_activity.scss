@@ -1,0 +1,24 @@
+.p-activity {
+  &--item {
+    margin-bottom: 20px;
+    // border-left: 3px solid $yellow;
+    display: flex;
+    align-items: center;
+    border-top: 3px solid $yellow;
+    &__invited {
+      @extend .p-activity--item;
+      background-color: #fffbb6;
+    }
+    &--date {
+      width: 25%;
+      max-width: 120px;
+      text-align: center;
+    }
+    &--texts {
+      flex: 1;
+      h4 {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,329 @@
+extends ../../layouts/_layout__pages
+
+block title
+  title Activity
+
+block content
+  h2.l-main--content--title Activity
+  h3.l-main--content--subtitle 学会活動
+  .p-activity
+    include ../../data/_activities
+    .p-section
+      h3.p-section--title 2020年
+      ul
+        each val in data2020
+          if !val.invited
+            li.p-activity--item
+              .p-activity--item--date 2020.#{val.date}
+              .p-activity--item--texts
+                if val.link
+                  h4: a.c-linktext(href=val.link)=val.society
+                else
+                  h4=val.society
+                p=val.title
+                i=val.presenter
+          else
+            li.p-activity--item__invited
+              .p-activity--item--date 2020.#{val.date}
+              .p-activity--item--texts
+                if val.link
+                  h4: a.c-linktext(href=val.link)=val.society
+                else
+                  h4=val.society
+                p=val.title
+                i=val.presenter
+           
+  .p-activity
+    include ../../data/_activities
+    .p-section
+      h3.p-section--title 2019年
+      ul
+        each val in data2019
+          if !val.invited
+            li.p-activity--item
+              .p-activity--item--date 2019.#{val.date}
+              .p-activity--item--texts
+                if val.link
+                  h4: a.c-linktext(href=val.link)=val.society
+                else
+                  h4=val.society
+                p=val.title
+                i=val.presenter
+          else
+            li.p-activity--item__invited
+              .p-activity--item--date 2019.#{val.date}
+              .p-activity--item--texts
+                if val.link
+                  h4: a.c-linktext(href=val.link)=val.society
+                else
+                  h4=val.society
+                p=val.title
+                i=val.presenter
+           
+  .p-activity
+    include ../../data/_activities
+    .p-section
+      h3.p-section--title 2018年
+      ul
+        each val in data2018
+          if !val.invited
+            li.p-activity--item
+              .p-activity--item--date 2018.#{val.date}
+              .p-activity--item--texts
+                if val.link
+                  h4: a.c-linktext(href=val.link)=val.society
+                else
+                  h4=val.society
+                p=val.title
+                i=val.presenter
+          else
+            li.p-activity--item__invited
+              .p-activity--item--date 2018.#{val.date}
+              .p-activity--item--texts
+                if val.link
+                  h4: a.c-linktext(href=val.link)=val.society
+                else
+                  h4=val.society
+                p=val.title
+                i=val.presenter
+           
+    .p-section
+      h3.p-section--title 2017年
+      ul
+        each val in data2017
+          if !val.invited
+            li.p-activity--item
+              .p-activity--item--date 2017.#{val.date}
+              .p-activity--item--texts
+                if val.link
+                  h4: a.c-linktext(href=val.link)=val.society
+                else
+                  h4=val.society
+                p=val.title
+                i=val.presenter
+          else
+            li.p-activity--item__invited
+              .p-activity--item--date 2017.#{val.date}
+              .p-activity--item--texts
+                if val.link
+                  h4: a.c-linktext(href=val.link)=val.society
+                else
+                  h4=val.society
+                p=val.title
+                i=val.presenter
+    .p-section
+      h3.p-section--title 2016年
+      ul
+        each val in data2016
+          if !val.invited
+            li.p-activity--item
+              .p-activity--item--date 2016.#{val.date}
+              .p-activity--item--texts
+                if val.link
+                  h4: a.c-linktext(href=val.link)=val.society
+                else
+                  h4=val.society
+                p=val.title
+                i=val.presenter
+          else
+            li.p-activity--item__invited
+              .p-activity--item--date 2016.#{val.date}
+              .p-activity--item--texts
+                if val.link
+                  h4: a.c-linktext(href=val.link)=val.society
+                else
+                  h4=val.society
+                p=val.title
+                i=val.presenter
+    .p-section
+      h3.p-section--title 2015年
+      ul
+        each val in data2015
+          if !val.invited
+            li.p-activity--item
+              .p-activity--item--date 2015.#{val.date}
+              .p-activity--item--texts
+                if val.link
+                  h4: a.c-linktext(href=val.link)=val.society
+                else
+                  h4=val.society
+                p=val.title
+                i=val.presenter
+          else
+            li.p-activity--item__invited
+              .p-activity--item--date 2015.#{val.date}
+              .p-activity--item--texts
+                if val.link
+                  h4: a.c-linktext(href=val.link)=val.society
+                else
+                  h4=val.society
+                p=val.title
+                i=val.presenter
+    .p-section
+      h3.p-section--title 2014年
+      ul
+        each val in data2014
+          if !val.invited
+            li.p-activity--item
+              .p-activity--item--date 2014.#{val.date}
+              .p-activity--item--texts
+                if val.link
+                  h4: a.c-linktext(href=val.link)=val.society
+                else
+                  h4=val.society
+                p=val.title
+                i=val.presenter
+          else
+            li.p-activity--item__invited
+              .p-activity--item--date 2014.#{val.date}
+              .p-activity--item--texts
+                if val.link
+                  h4: a.c-linktext(href=val.link)=val.society
+                else
+                  h4=val.society
+                p=val.title
+                i=val.presenter
+    .p-section
+      h3.p-section--title 2013年
+      ul
+        each val in data2013
+          if !val.invited
+            li.p-activity--item
+              .p-activity--item--date 2013.#{val.date}
+              .p-activity--item--texts
+                if val.link
+                  h4: a.c-linktext(href=val.link)=val.society
+                else
+                  h4=val.society
+                p=val.title
+                i=val.presenter
+          else
+            li.p-activity--item__invited
+              .p-activity--item--date 2013.#{val.date}
+              .p-activity--item--texts
+                if val.link
+                  h4: a.c-linktext(href=val.link)=val.society
+                else
+                  h4=val.society
+                p=val.title
+                i=val.presenter
+    .p-section
+      h3.p-section--title 2012年
+      ul
+        each val in data2012
+          if !val.invited
+            li.p-activity--item
+              .p-activity--item--date 2012.#{val.date}
+              .p-activity--item--texts
+                if val.link
+                  h4: a.c-linktext(href=val.link)=val.society
+                else
+                  h4=val.society
+                p=val.title
+                i=val.presenter
+          else
+            li.p-activity--item__invited
+              .p-activity--item--date 2012.#{val.date}
+              .p-activity--item--texts
+                if val.link
+                  h4: a.c-linktext(href=val.link)=val.society
+                else
+                  h4=val.society
+                p=val.title
+                i=val.presenter
+    .p-section
+      h3.p-section--title 2011年
+      ul
+        each val in data2011
+          if !val.invited
+            li.p-activity--item
+              .p-activity--item--date 2011.#{val.date}
+              .p-activity--item--texts
+                if val.link
+                  h4: a.c-linktext(href=val.link)=val.society
+                else
+                  h4=val.society
+                p=val.title
+                i=val.presenter
+          else
+            li.p-activity--item__invited
+              .p-activity--item--date 2011.#{val.date}
+              .p-activity--item--texts
+                if val.link
+                  h4: a.c-linktext(href=val.link)=val.society
+                else
+                  h4=val.society
+                p=val.title
+                i=val.presenter
+    .p-section
+      h3.p-section--title 2010年
+      ul
+        each val in data2010
+          if !val.invited
+            li.p-activity--item
+              .p-activity--item--date 2010.#{val.date}
+              .p-activity--item--texts
+                if val.link
+                  h4: a.c-linktext(href=val.link)=val.society
+                else
+                  h4=val.society
+                p=val.title
+                i=val.presenter
+          else
+            li.p-activity--item__invited
+              .p-activity--item--date 2010.#{val.date}
+              .p-activity--item--texts
+                if val.link
+                  h4: a.c-linktext(href=val.link)=val.society
+                else
+                  h4=val.society
+                p=val.title
+                i=val.presenter
+    .p-section
+      h3.p-section--title 2009年
+      ul
+        each val in data2009
+          if !val.invited
+            li.p-activity--item
+              .p-activity--item--date 2009.#{val.date}
+              .p-activity--item--texts
+                if val.link
+                  h4: a.c-linktext(href=val.link)=val.society
+                else
+                  h4=val.society
+                p=val.title
+                i=val.presenter
+          else
+            li.p-activity--item__invited
+              .p-activity--item--date 2009.#{val.date}
+              .p-activity--item--texts
+                if val.link
+                  h4: a.c-linktext(href=val.link)=val.society
+                else
+                  h4=val.society
+                p=val.title
+                i=val.presenter
+    .p-section
+      h3.p-section--title 2008年
+      ul
+        each val in data2008
+          if !val.invited
+            li.p-activity--item
+              .p-activity--item--date 2008.#{val.date}
+              .p-activity--item--texts
+                if val.link
+                  h4: a.c-linktext(href=val.link)=val.society
+                else
+                  h4=val.society
+                p=val.title
+                i=val.presenter
+          else
+            li.p-activity--item__invited
+              .p-activity--item--date 2008.#{val.date}
+              .p-activity--item--texts
+                if val.link
+                  h4: a.c-linktext(href=val.link)=val.society
+                else
+                  h4=val.society
+                p=val.title
+                i=val.presenter

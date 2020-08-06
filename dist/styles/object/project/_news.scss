@@ -1,0 +1,31 @@
+.p-news {
+  margin-top: 50px;
+  line-height: 1.6;
+  &--item {
+    // display: flex;
+    // margin-bottom: 20px;
+    // border: 5px solid #fff;
+    &--date {
+      width: 70px;
+      text-align: right;
+      padding-right: 40px;
+      font-family: $enFont;
+    }
+    &--text {
+      // flex:1;
+      display: block;
+      padding-bottom: 20px;
+    }
+  }
+  &--item__haslink {
+    a {
+      transition: color .5s ease;
+      &:hover {
+        color: $pink;
+      }
+    }
+  }
+  .p-section p {
+    text-indent: 1em;
+  }
+}

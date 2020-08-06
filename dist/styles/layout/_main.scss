@@ -1,0 +1,49 @@
+.l-main {
+  font-size: 14px;
+  color: $black;
+  margin-top: 80px;
+  @include mq-up() {
+    font-size: 16px;
+  }
+  &--content {
+    margin:0 auto;
+    max-width: 600px;
+    width: 90%;
+    padding: 10px 0 50px;
+    font-family: $jaFont;
+    &__wide {
+      @extend .l-main--content;
+      @include mq-up() {
+        max-width: initial;
+        width: auto;
+        padding: 0 50px;
+        .l-main--content--title, .l-main--content--subtitle {
+          margin:0 auto;
+          max-width: 600px;
+          width: 90%;
+          // pdding: 10px 0 50px;
+        }
+      }
+    }
+    &--title {
+      color: $gray;
+      font-size: 58px;
+      font-family: $enFont;
+      @include mq-up() {
+        font-size: 65px;
+      }
+    }
+    &--subtitle {
+      margin: 20px 0;
+      font-size: 24px;
+      font-weight: normal;
+      @include mq-up() {
+        font-size: 26px;
+      }
+    }
+    &--topText {
+      line-height: 1.4;
+      font-family: $enFont;
+    }
+  }
+}
