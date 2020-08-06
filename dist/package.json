@@ -1,0 +1,26 @@
+{
+	"name": "tomo2018",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"dependencies": {},
+	"devDependencies": {
+		"@pingy/cli": "^0.12.5"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "pingy dev",
+		"export": "pingy export"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/tomonaridotera/my-web.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/tomonaridotera/my-web/issues"
+	},
+	"homepage": "https://github.com/tomonaridotera/my-web#readme"
+}
