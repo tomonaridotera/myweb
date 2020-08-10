@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Diagonal Bond Method; 対角線法</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/styles/app.css">
+  </head>
+  <body>
+    <header class="l-header"><a href="/"><img class="l-header--logo" src="/assets/images/weblogo.png"></a>
+      <div class="l-header--panel" id="js-menu-wrap">
+        <nav class="js-nav l-header--nav">
+          <ul>
+            <li><a href="/pages/about/">About me</a></li>
+            <li><a href="/pages/news/">News & Topics</a></li>
+            <li><a href="/pages/publications/">Publications</a></li>
+            <li><a href="/pages/activity/">Activity</a></li>
+            <li><a href="/pages/laboratory/">Laboratory</a></li>
+            <li><a href="/pages/students/">Students</a></li>
+            <li><a href="/pages/research/">Research</a></li>
+            <li><a href="/pages/textbooks/">Textbooks</a></li>
+          </ul>
+        </nav><i class="icon ion-md-close" id="js-close-menu"></i>
+      </div>
+      <div class="l-header--menu" id="js-open-menu"><i class="icon ion-md-menu"></i>
+        <p>Menu</p>
+      </div>
+    </header>
+    <div class="l-main">
+      <div class="l-main--content">
+        <div class="p-research"><a class="p-research--back" href="/pages/research/">← back to Research</a>
+          <div class="p-research--menu u-mT20">
+            <p>*</p><a href="AB_lamellar_mov.html">next<i class="icon ion-md-arrow-dropright-circle u-mL10"></i></a>
+          </div>
+          <h2>対角線法</h2><img src="Image/dbm.gif" alt="" srcset="">
+          <p>平衡系ミクロ相分離モルホロジーに焦点を絞り開発された方法である．モノマーを格子点に置き，格子の辺にボンドを這わせる格子モデル（左）は教科書でもお馴染みであろう．対角線法では辺の他に，立方体の面の対角線(長さ )と立方体の対角線(長さ )を用いるという拡張（右）を行う ．</p>
+          <p>格子点から伸びるボンドの方向は6から26に増え，ボンドにとっては低密度な空間が出現することで劇的変化が起こる．すなわち，配置数が激増し，高分子はよく動き，高密度に詰められるようになる．</p>
+          <p>高分子の動力学はVerdier-Stockmayerに倣い，１個のモノマーの局所運動のみによる．ミクロ相分離を起こすための相互作用エネルギーとして，異種モノマーが（格子の一辺を1として）距離ルート3以内の格子点にいるときエネルギーが上がることにする．モンテカルロ計算は標準的なメトロポリス法を採用し，高温で乱雑に混合した状態から，ある温度にクエンチすることによってミクロ相分離構造を得ている．</p>
+          <p>対角線法では高分子のすり抜けを許容し，絡み合いによる能率の低下を回避している．つまり，すり抜けによって平衡状態に到達しやすく，一旦平衡状態に到達すれば多くの配置をとれるために統計精度も上がる．異種モノマー間の斥力エネルギーと，高分子弾性すなわちエントロピーの競合というミクロ相分離の本質は残したまま，不必要な動的非効率を取り除いた方法となっている．</p>
+          <p class="u-mT30">A new lattice model for Monte Carlo simulations of dense polymer melts was developed in the spirit of Verdier-Stockmayer local move algorithm. By introducing diagonals of squares and cubes as bonds the lattice model acquires a large number of configurations (entropy), which leads to good statistical properties. Bond directions emanating from one lattice point increase from 6 to 26 , bonds feel low density and move very easily; consequently, we can pack many polymers in a simulation box. In addition, while the method maintains the excluded volume interactions of monomers, it allows bond crossings (peace mark in the figure) and phantom moves, which result in high mobility of polymers.</p>
+          <p style="color:red">Although it is a really simple extension of the simplest model, dramatic changes occur!</p>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="/scripts/main.js"></script>
+  </body>
+</html>
