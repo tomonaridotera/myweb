@@ -1,0 +1,94 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Tomonari Dotera's Website
+    meta(name='description', content='Tomonari Dotera\'s Website')
+    meta(name='viewport', content='width=device-width')
+    meta(name='keywords', content='Tomonari Dotera, Kindai University, Kinki University, kindai, physics, quasicrystal, soft matter, Bronze mean quasicrystal, Archimedean tiling, block copolymer, polymer, simulation, triply periodic minimal surface, gyroid, 堂寺知成, 近大, 近畿大学, 私大, 物理, 私立大学, 物理学科, 準結晶, ソフトマター, 青銅比準結晶, アルキメデスタイリング, ブロック共重合体, ジャイロイド, 三重周期極小曲面')
+    meta(name='robots', content='noarchive')
+
+    meta(property='og:title', content='Tomonari DOTERA Homepage')
+    meta(property='og:type', content='website')
+    meta(property='og:url', content='https://softmatter.phys.kindai.ac.jp')
+    meta(property='og:image', content='https://softmatter.phys.kindai.ac.jp/images/ogp-img.png')
+    meta(property='og:site_name', content='Tomonari DOTERA Homepage')
+    meta(property='fb:app_id', content='138558933516094')
+    meta(property='og:description', content='Tomonari DOTERA Homepage')
+
+    link(rel='shortcut icon', href='/assets/images/favicon.ico')
+    link(rel='apple-touch-icon', sizes='152x152', href='/assets/images/apple-touch-icon-152x152.png')
+
+    link(rel='stylesheet', href='/assets/css/main.css')
+  body
+    header.l-header
+      a(href='/'): img.l-header--logo(src='/assets/images/weblogo.png')
+      .l-header--panel#js-menu-wrap
+        nav.js-nav.l-header--nav: ul
+          li: a(href='pages/about/') About me
+          li: a(href='pages/news/') News & Topics
+          li: a(href='pages/publications/') Publications
+          li: a(href='pages/activity/') Activity
+          li: a(href='pages/laboratory/') Laboratory
+          li: a(href='pages/students/') Students
+          li: a(href='pages/research/') Research
+          li: a(href='pages/textbooks/') Textbooks
+        i.icon.ion-md-close#js-close-menu
+      .l-header--menu#js-open-menu
+        i.icon.ion-md-menu
+        p Menu
+    .l-main
+      .p-top
+        .p-top--fv
+          h1.p-top--title Tomonari#[br]Dotera's#[br] Website
+          .p-top--slider
+            img(src="/assets/images/pqc.jpg")
+            img(src="/assets/images/fig4.jpg")
+            img(src="/assets/images/psurface.jpg")
+            img(src="/assets/images/IMG_5810.jpg")
+          .p-top--arrow
+            i.icon.ion-md-arrow-dropdown
+        .l-main--content
+          .p-section.p-top--section
+            h2.u-mB10 Contact
+            .c-toggleBtn#js-toggleBtn English
+            ul.contact#js-jp
+              li 堂寺知成
+              li 〒577-8502 大阪府東大阪市小若江3-4-1近畿大学本部31号館4F
+              li 近畿大学本部31号館4F
+              li TEL 06-4307-3423
+              li family-name (small letter) @ phys.kindai.ac.jp
+              li: a(href='http://www.phys.kindai.ac.jp/').c-linktext 近畿大学 理工学部 理学科 物理学コース
+              li: a(href='https://www.kindai.ac.jp/sci/').c-linktext 近畿大学理工学部/大学院総合理工学研究科
+            ul.contact#js-en
+              li Tomonari DOTERA
+              li Kowakae 3-4-1 Higashi-Osaka 577-8502, Japan
+              li +81-6-4307-3423
+              li family-name (small letter) @ phys.kindai.ac.jp
+              li: a(href='http://www.phys.kindai.ac.jp/en/').c-linktext Department of Physics, Kindai University
+              li: a(href='https://www.kindai.ac.jp/sci/english/').c-linktext Graduate School of Science and Engineering, Kindai University
+            a(href='pages/about').c-btn More
+          .p-section.p-top--section.u-mT60
+            h2 Latest News
+            section.u-mT10.p-news: ul
+              include data/_news
+              each val, i in items
+                if i < 5
+                  if val.link
+                    li: a(href=val.link).p-news--item__haslink
+                      p.p-news--item--date=val.date
+                      p.p-news--item--text=val.text
+                  else
+                    li.p-news--item
+                      p.p-news--item--date=val.date
+                      .p-news--item--text
+                        p=val.text
+                        if val.links
+                          .u-mT5
+                          each item in val.links
+                            a(href=item.link).c-smallBtn=item.text
+            a(href='pages/news').c-btn More
+          
+
+    script(src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous")
+    script(src='/assets/js/main.js')
