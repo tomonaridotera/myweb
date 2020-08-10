@@ -11,7 +11,7 @@ block content
       include ../../data/_students
       each val, i in items
         li.p-student--item
-          img(src=`images/${val.image}`)
+          img(src=`/assets/images/students/${val.image}`)
           .p-student--item--name 
             h3.u-mB5=val.name
             p (#{val.grade})
@@ -34,7 +34,7 @@ block content
         include ../../data/_graduates
         each val, i in items
           li.p-student--item.p-student--item__graduate
-            img(src=`images/${val.image}`)
+            img(src=`/assets/images/students/${val.image}`)
             .p-student--item--name 
               h3.u-mB5=val.name
               p #{val.year}年#{val.month}月
