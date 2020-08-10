@@ -40,7 +40,7 @@ const src = {
   css: './src/assets/css/main.scss',
   cssWatch: 'src/**/*.scss',
   js: 'src/**/*.js',
-  image: 'src/assets/images/**/*.{png,jpg,gif,svg,ico}',
+  image: 'src/assets/images/**/*.{png,jpg,gif,svg,ico,pdf}',
   imageWatch: 'src/assets/img/**/*',
 };
 //　ここで指定したパスが↓dest時に引き継がれる
