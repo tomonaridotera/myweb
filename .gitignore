@@ -1,8 +1,3 @@
 node_modules/
 export/
-*.mov
-*.mov.gz
-*.mov.zip
-*.mp4
-pages/textbooks/*/Movie/
 package-lock.json
