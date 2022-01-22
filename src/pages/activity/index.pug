@@ -9,6 +9,60 @@ block content
   .p-activity
     include ../../data/_activities
     .p-section
+      h3.p-section--title 2022年
+      ul
+        each val in data2022
+          if !val.invited
+            li.p-activity--item
+              .p-activity--item--date 2022.#{val.date}
+              .p-activity--item--texts
+                if val.link
+                  h4: a.c-linktext(href=val.link)=val.society
+                else
+                  h4=val.society
+                p=val.title
+                i=val.presenter
+          else
+            li.p-activity--item__invited
+              .p-activity--item--date 2022.#{val.date}
+              .p-activity--item--texts
+                if val.link
+                  h4: a.c-linktext(href=val.link)=val.society
+                else
+                  h4=val.society
+                p=val.title
+                i=val.presenter
+           
+  .p-activity
+    include ../../data/_activities
+    .p-section
+      h3.p-section--title 2021年
+      ul
+        each val in data2021
+          if !val.invited
+            li.p-activity--item
+              .p-activity--item--date 2021.#{val.date}
+              .p-activity--item--texts
+                if val.link
+                  h4: a.c-linktext(href=val.link)=val.society
+                else
+                  h4=val.society
+                p=val.title
+                i=val.presenter
+          else
+            li.p-activity--item__invited
+              .p-activity--item--date 2021.#{val.date}
+              .p-activity--item--texts
+                if val.link
+                  h4: a.c-linktext(href=val.link)=val.society
+                else
+                  h4=val.society
+                p=val.title
+                i=val.presenter
+           
+  .p-activity
+    include ../../data/_activities
+    .p-section
       h3.p-section--title 2020年
       ul
         each val in data2020
