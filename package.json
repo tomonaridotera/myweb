@@ -32,5 +32,6 @@
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-pngquant": "^8.0.0",
     "postcss-flexbugs-fixes": "^4.1.0"
-  }
+  },
+  "dependencies": {}
 }
