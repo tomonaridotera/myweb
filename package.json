@@ -13,9 +13,9 @@
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.5.4",
-    "@babel/preset-env": "^7.5.4",
+    "@babel/preset-env": "^7.22.9",
     "autoprefixer": "^9.7.4",
-    "browser-sync": "^2.27.7",
+    "browser-sync": "^2.29.3",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-cached": "^1.1.1",
