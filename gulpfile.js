@@ -74,6 +74,8 @@ function html() {
       .pipe(plumber({ errorHandler: notify.onError('Error: <%= error.message %>') }))
       .pipe(
         data(file => {
+          const pagePath = path.relative(file.base, file.path).replace(/\.pug$/, '.html').split(path.sep).join('/');
+          return { pageUrl: 'https://tomonaridotera.github.io/myweb/' + (pagePath === 'index.html' ? '' : pagePath) };
           // 各ページのルート相対パスを格納します。
           // locals.pageAbsolutePath = `/${path
           //   .relative(file.base, file.path.replace(/.pug$/, '.html'))
